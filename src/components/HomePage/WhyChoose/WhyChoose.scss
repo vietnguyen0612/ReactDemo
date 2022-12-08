@@ -1,0 +1,99 @@
+.why-choose {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    
+    .img1 {
+        width: 100%;
+        height: 720px;
+    }
+
+    .img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 720px;
+    }
+
+    .container {
+        position: absolute;
+        width: 100%;
+        top: 270px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+
+        .text-content {
+            margin:0 100px;
+
+            .text-content1 {
+                width: 461px;
+                height: 53px;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 125%;
+                color: #FFFFFF;
+            }
+
+            .text-content2 {
+                width: 486px;
+                height: 80px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1em;
+                color: #D8DCFF;
+            }
+        }
+
+        .parameter-content {
+            width: 670px;
+            height: 220px;
+            display: flex;
+            flex-wrap: wrap;
+            
+
+
+            .parameter {
+                display: flex;
+                margin-right: 80px;
+                cursor: pointer;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    margin-right: 10px;
+                }
+
+                .par {
+                    .par1 {
+                        width: 122px;
+                        height: 41px;
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 125%;
+                        color: #FFFFFF;
+
+                    }
+
+                    .par2 {
+                        position: absolute;
+                        width: 140px;
+                        height: 23px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 125%;
+                        color: #fff;
+
+                        &:hover {
+                            color: #FF9ACB;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

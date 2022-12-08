@@ -1,0 +1,93 @@
+.call-service {
+    display: flex;
+    width: 1139px;
+    height: 122px;
+    margin: 150px auto;
+    
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+
+        .content1 {
+            width: 391px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            color: #091156;
+        }
+
+        .content2 {
+            width: 391px;
+            height: 60px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            strong {
+                color: #091156;
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+        flex: 1;
+        .call {
+            input {
+                position: absolute;
+                width: 658px;
+                height: 73px;
+                right: 0;
+                top: 0;
+                background: #FFFFFF;
+                border: 1px solid #D9DDFE;
+                border-radius: 25px;
+                padding: 0 130px 0 40px;    
+                outline: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1em;  
+                color: rgb(84, 81, 81);
+                &::placeholder {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;  
+                    color: #C5C5C5;
+
+                }
+            }
+            .phone {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 73px;
+                width: 120px;
+                background-color: #FF64AE;
+                border-radius: 0px 25px 25px 0px;
+                img {
+                    position: absolute;
+                    top: 17px;
+                    right: 45px;
+                }
+            }
+        }
+
+        p {
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: 0.1em;
+            font-style: italic;
+            color: #8B8B8B;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.header {
+    position: fixed;
+    height: 63px;
+    width: 1520px;
+    left: 0px;
+    top: 41px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    padding: 0 150px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    
+        .header-icon {
+            width: 63px;
+            height: 63px;
+            background-color: #FF64AE;
+            border-radius: 50%;
+            box-shadow: -1px 3px 4px #888888;
+            position: relative;
+        }
+    
+        .header-icon-1 {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .header-icon-2 {
+            position: absolute;
+            top: 24px;
+            left: 28px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .header-icon-3 {
+            position: absolute;
+            top: 26px;
+            left: 40px;
+            width: 40px;
+            height: 11px;
+            border-radius: 5px;
+            background-color: #091156;
+        }
+    
+        .logo-name {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0.1em;
+            margin-left: 40px;
+            text-align: left;
+            color:#091156;
+            text-shadow: 2px 2px 8px rgb(154, 153, 153);
+        }
+    }
+
+    
+
+    .nav {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            list-style: none;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            margin-left: 40px;
+            color: #D8DCFF;
+        }
+        a:hover {
+            cursor: pointer;
+            color: #FF64AE;
+        }
+    }
+
+    .Contact-button {
+        height: 52px;
+        width: 158px;
+        background-color: #FF64AE;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 52px;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        margin-left: 40px;
+        font-weight: 600;
+    }
+    
+    .Contact-button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
