@@ -1,7 +1,9 @@
+@import '../../global.scss';
+
 .header {
-    position: fixed;
+    position: absolute;
     height: 63px;
-    width: 1520px;
+    width: 100%;
     left: 0px;
     top: 41px;
     display: flex;
@@ -9,65 +11,33 @@
     z-index: 10;
     padding: 0 150px;
 
-    .logo {
-        display: flex;
-        align-items: center;
-        flex: 1;
-    
-        .header-icon {
-            width: 63px;
-            height: 63px;
-            background-color: #FF64AE;
-            border-radius: 50%;
-            box-shadow: -1px 3px 4px #888888;
-            position: relative;
-        }
-    
-        .header-icon-1 {
-            position: absolute;
-            top: 10px;
-            left: 14px;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background-color: white;
-        }
-        .header-icon-2 {
-            position: absolute;
-            top: 24px;
-            left: 28px;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: white;
-        }
-        .header-icon-3 {
-            position: absolute;
-            top: 26px;
-            left: 40px;
-            width: 40px;
-            height: 11px;
-            border-radius: 5px;
-            background-color: #091156;
-        }
-    
-        .logo-name {
-            font-family: Poppins;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 36px;
-            letter-spacing: 0.1em;
-            margin-left: 40px;
-            text-align: left;
-            color:#091156;
-            text-shadow: 2px 2px 8px rgb(154, 153, 153);
-        }
+    @include tablet {
+        position: fixed;
+        top: 0;
+        height: 70px;
+        padding: 0 100px;
+        background-color: #091156;
+    }
+    @include mobile {
+        padding: 0 20px;
     }
 
+
+    &.active {
+        .nav {
+
+            a {
+                color: white;
+            } 
+        }
+    }
     
 
     .nav {
         display: flex;
+        @include tablet {
+            display: none;
+        }
 
         a {
             text-decoration: none;
@@ -78,7 +48,7 @@
             letter-spacing: 0.1em;
             text-align: left;
             margin-left: 40px;
-            color: #D8DCFF;
+            color: #8B8B8B;
         }
         a:hover {
             cursor: pointer;
@@ -98,6 +68,9 @@
         color: white;
         margin-left: 40px;
         font-weight: 600;
+        @include tablet {
+            display: none;
+        }
     }
     
     .Contact-button:hover {

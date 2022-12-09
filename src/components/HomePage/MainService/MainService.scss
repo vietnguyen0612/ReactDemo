@@ -1,3 +1,5 @@
+@import '../../../global.scss';
+
 .main-service {
     display: flex;
     flex-direction: column;
@@ -36,7 +38,9 @@
 
     .cards {
         display: flex;
-
+        @include mobile{
+            flex-direction: column;
+        }
 
         .card {
             width: 261px;
@@ -51,6 +55,17 @@
             padding-bottom: 20px ;
             padding-top: 10px;
             transition: all .5s;
+
+            @include tablet {
+                width: 240px;
+                height: 280px;
+                padding: 0 15px;
+                margin: 70px 15px 140px 15px;
+            }
+
+            @include mobile{
+                margin: 20px 40px 20px 40px;
+            }
 
 
             .card-img {

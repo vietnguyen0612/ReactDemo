@@ -1,30 +1,28 @@
-import './Header.scss';
-
 import { Link } from 'react-router-dom'
+import './Header.scss';
+import Logo from '../logo/Logo';
+import MenuIcon from '../Menu/MenuIcon/MenuIcon';
  
-function Header() {
-    return (
-        <div className="header">
-            <div className="logo">
-                <div className="header-icon">
-                    <div className="header-icon-1"></div>
-                    <div className="header-icon-2"></div>
-                    <div className="header-icon-3"></div>
-                </div>
-                <span className="logo-name">Beautice</span>
+function Header({active, setAtive, menuOpen, setMenuOpen}) {
 
-            </div>
+
+    return (
+        <div className={"header " + (active && "active")}>
+            
+            <Logo active={active}/>
             <div className="nav">
-                <Link className="home" to='/'>Home +</Link>
-                <Link className="about" to='/about'>About</Link>
-                <Link className="service" to='/service'>Service</Link>
-                <Link className="gallery" to='/gallery'>Gallery</Link>
-                <Link className="blog" to='/blog'>Blog</Link>
+                <Link className="home" to='/' onClick={() => setAtive(true)}>Home +</Link>
+                <Link className="about" to='/about' onClick={() => setAtive(false)}>About</Link>
+                <Link className="service" to='/service' onClick={() => setAtive(false)}>Service</Link>
+                <Link className="gallery" to='/gallery' onClick={() => setAtive(false)}>Gallery</Link>
+                <Link className="blog" to='/blog' onClick={() => setAtive(false)}>Blog</Link>
                 
             </div>
-            <Link className="Contact-button" to='/contact'>
+            <Link className="Contact-button" to='/contact' onClick={() => setAtive(false)}>
                 Contact
             </Link>
+
+            <MenuIcon active={active} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         </div>
     );
 }
