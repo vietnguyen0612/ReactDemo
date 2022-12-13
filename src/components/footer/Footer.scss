@@ -64,7 +64,7 @@
     display: flex;
     padding: 0 150px;
     justify-content: space-between;
-    transform: translate(0, 120px);
+    transform: translate(0, 230px);
     z-index: 2;
     @include tablet{
        padding: 0 30px;
@@ -276,7 +276,7 @@
 
 .footer-bottom {
     display: flex;
-    transform: translate(0 , 200px);
+    transform: translate(0 , 380px);
     justify-content: space-between;
     padding: 0 150px;
     @include mobile {
@@ -318,7 +318,7 @@
     width: 100%;
     height: 140px;
     left: 0px;
-    bottom: -30px;
+    bottom: -40px;
     background: #0D165C;
     transform: matrix(1, 0, 0, -1, 0, 0);
     z-index: -4;

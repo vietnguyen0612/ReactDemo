@@ -1,6 +1,12 @@
+import './About.scss'
+import SectionAbout from '../../components/AboutPage/SectionAbout/SectionAbout';
+import SectionTeam from '../../components/AboutPage/SectionTeams/SectionTeam';
 function About() {
     return (
-        <h1>About</h1>
+        <div className='about-page'>
+            <SectionAbout />
+            <SectionTeam />
+        </div>
     );
 }
 
