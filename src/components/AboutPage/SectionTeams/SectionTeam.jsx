@@ -5,6 +5,8 @@ import img3 from '../../../img/aboutsectionteamimg3.png';
 import facebook from '../../../img/Facebook.png';
 import Instagram from '../../../img/Instagram.png';
 import Twitter from '../../../img/Twitter.png';
+import background1 from '../../../img/aboutsectionteambg1.png';
+import background2 from '../../../img/aboutsectionteambg2.png';
 
 function SectionTeam() {
     return (  
@@ -52,6 +54,8 @@ function SectionTeam() {
                 </div>
 
             </div>
+            <img className='background1' src={background1} alt="" />
+            <img className='background2' src={background2} alt="" />
         </div>
     );
 }

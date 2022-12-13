@@ -1,0 +1,84 @@
+@import '../../../global.scss';
+
+.section-client-wrapper{
+    width: 100%;
+    position: relative;
+    .section-client {
+        display: flex;
+        flex-direction: column;
+        width: 962px;
+        height: 306px;
+        margin: 0 auto;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        @include tablet {
+            width: 100%;   
+            height: 100%;
+        }
+
+
+        .section-client-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+                color: #FF64AE;
+                @include mobile {
+                    font-size: 14px;
+                }
+            }
+            .content1 {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 125%;
+                text-align: center;
+                color: #091156;
+                margin-top: 12px;
+                @include mobile {
+                    font-size: 26px;
+                }
+            }
+            .content2 {
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1em;
+                text-align: center;
+                color: #8B8B8B;
+                margin-top: 25px;
+                @include mobile {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .logos {
+            display: flex;
+
+            img {
+                height: 80px;
+                @include tablet {
+                    height: 60px;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    .back-ground1 {
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        z-index: -2;
+    }
+    .back-ground2 {
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        z-index: -1;
+    }
+}

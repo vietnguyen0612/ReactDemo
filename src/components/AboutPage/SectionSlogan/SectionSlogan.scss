@@ -1,0 +1,109 @@
+@import '../../../global.scss';
+
+.section-slogan {
+    width: 100%;
+    position: relative;
+    margin-bottom: 115px;
+
+    .section-slogan-content {
+        position: absolute;
+        z-index: 3;
+        width: 732px;
+        height: 197px;
+        left: 354px;  
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include tablet {
+            top: 70px;
+            left: 50px;
+        }
+
+        @include mobile {
+            width: 400px;
+            left: 0;
+            top: 30px;
+        }
+
+        .title {
+            width: 133px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: #ABB4FF;
+            @include mobile {
+                font-size: 14px;
+            }
+
+        }
+        .content1 {
+            width: 732px;
+            height: 97px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 12px;
+            @include tablet {
+                font-size: 32px;
+
+            }
+            @include mobile {
+                width: 400px;
+                font-size: 22px;
+                height: 50px;
+            }
+        }
+
+        .content2 {
+            width: 680px;
+            height: 56px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #CACACA;
+            margin-top: 12px;
+            @include tablet {
+                font-size: 14px;
+            }
+            @include mobile {
+                font-size: 12px;
+                width: 400px;
+                
+            }
+        }
+
+    }
+
+    .back-ground2 {
+        width: 100%;
+        height: 560px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        @include tablet {
+            height: 340px;
+        }
+        @include mobile {
+            height: 200px;
+        }
+    }
+    .back-ground1 {
+        width: 100%;
+        height: 560px;
+        @include tablet {
+            height: 340px;
+        }
+        @include mobile {
+            height: 200px   ;
+        }
+    }
+}

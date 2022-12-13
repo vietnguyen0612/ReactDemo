@@ -1,0 +1,49 @@
+.section-Treatment {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+
+    .image {
+        width: 475px;
+        height: 315px;
+
+    }
+
+    .section-consultation-content {
+
+        .title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #FF64AE;
+        }
+        .content1 {
+            width: 411px;
+            height: 103px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            color: #091156;
+            margin-top: 12px;
+
+        }
+        .content2 {
+            width: 475px;
+            height: 87px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+        }
+        .make-appointment {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #091156;
+            margin-top: 9px;
+
+        }
+    }
+}
