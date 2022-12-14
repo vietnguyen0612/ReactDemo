@@ -1,6 +1,7 @@
 import './MainSlider.scss'
 import background1 from '../../../img/homebackground1.png';
 import background2 from '../../../img/homebackground2.png';
+import { HiOutlinePlay } from "react-icons/hi";
 function MainSlider() {
     return (  
         <div className="background-slider">
@@ -18,8 +19,7 @@ function MainSlider() {
                 </div>
 
                 <div className='video-audio'>
-                    <div className="video-button">
-                    </div>
+                    <HiOutlinePlay fontSize='150px' color="white"/>
                     <p className='tour-video'>Tour Video</p>
                 </div>
             </div>
