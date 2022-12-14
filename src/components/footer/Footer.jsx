@@ -22,7 +22,7 @@ function Footer() {
             <img className="footer-background2" src={background2} alt="" />
             <div className="footer-container">
                 <div className="footer-sidebar1">
-                    <Logo />
+                    <Logo active={true}/>
                     <div className="footer-sidebar1-content">Beautice is a Beauty Clinic WordPress Theme.</div>
                     <div className="footer-sidebar1-address">Baker Steet 101, NY, United States.</div>
                     <div className="footer-sidebar1-phone-email">
