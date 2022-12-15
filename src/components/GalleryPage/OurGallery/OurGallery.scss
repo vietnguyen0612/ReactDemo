@@ -1,0 +1,119 @@
+@import '../../../global.scss';
+.our-gallery{
+    width: 100%;
+    padding: 230px 150px 100px 150px;
+
+    @include tablet {
+        padding: 230px 30px 100px 30px;
+    }
+
+    @include mobile {
+        padding: 150px 30px 100px 30px;
+    }
+
+    .text-content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: unset;
+        }
+        .title {
+
+            .title1 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+                color: #FF64AE;
+
+                @include mobile {
+                    font-size: 14px;
+                }
+
+
+            }
+            .title2 {
+                width: 615px;
+                height: 104px;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 125%;
+                color: #091156;
+                margin-top: 20px;
+                @include mobile {
+                    width: 380px;
+                    height: unset;
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .content {
+            width: 407px;
+            height: 72px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            @include mobile {
+                width: 380px;
+                height: unset;
+                font-size: 14px;
+
+            }
+        }
+
+    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include tablet {
+            justify-content: center;
+        }
+
+        img {
+            width: 356px;
+            height: 210px;      
+            margin-top: 38px;
+            cursor: pointer;
+            transition: 0.6s all;
+            
+            @include tablet {
+                width: 330px;
+                height: 190px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .text-content2 {
+        width: 660px;
+        height: 72px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        color: #8B8B8B;
+        margin-top: 70px;
+        @include mobile {
+            width: 380px;      
+            height: unset;
+            font-size: 14px;
+        }
+
+        p {
+            color: #091156;
+            font-weight: 600;
+        }
+
+    }
+}

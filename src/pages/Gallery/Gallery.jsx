@@ -1,6 +1,14 @@
+import './Gallery.scss';
+import OurGallery from '../../components/GalleryPage/OurGallery/OurGallery';
+import GalleryVideo from '../../components/GalleryPage/GalleryVideo/GalleryVideo';
+import GalleryQuota from '../../components/GalleryPage/GalleryQuota/GalleryQuota';
 function Gallery() {
     return (  
-        <h1>Gallery</h1>
+        <div className="gallery-page">
+            <OurGallery />
+            <GalleryVideo />
+            <GalleryQuota />
+        </div>
     );
 }
 
