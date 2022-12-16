@@ -279,7 +279,11 @@
     transform: translate(0 , 380px);
     justify-content: space-between;
     padding: 0 150px;
+    @include tablet {
+        display: none;
+    }
     @include mobile {
+        display: flex;
         transform: translate(0 , 6px);
     }
     @include mobile {

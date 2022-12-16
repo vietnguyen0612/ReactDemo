@@ -1,3 +1,4 @@
+@import '../../../global.scss';
 .gallery-quota {
     position: relative;
     width: 100%;
@@ -7,6 +8,18 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet {
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+
+    @include mobile {
+        padding: 30px;
+        height: 400px;
+    }
 
     .text-content {
 
@@ -17,6 +30,11 @@
             font-size: 16px;
             line-height: 125%;
             color: #FF64AE;
+            @include mobile {
+                padding: 20px;
+                width: 380px;
+                font-size: 26px;
+            }
         }
 
         .content1 {
@@ -27,7 +45,11 @@
             line-height: 125%;
             color: #091156;
             margin-top: 12px;
-
+            @include mobile {
+                padding: 20px;
+                width: 380px;
+                font-size: 26px;
+            }
         }
 
         .content2 {
@@ -39,6 +61,11 @@
             letter-spacing: 0.1em;
             color: #8B8B8B;
             margin-top: 18px;
+            @include mobile {
+                padding: 20px;
+                width: 380px;
+                font-size: 14px;
+            }
         }
     }
 
@@ -52,6 +79,11 @@
         justify-content: center;
         align-items: center;
         color: white;
+        
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
     }
     .bg1 {
         position: absolute;

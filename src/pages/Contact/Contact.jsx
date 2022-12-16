@@ -1,6 +1,10 @@
+import ContactForm from '../../components/ContactPgae/ContactForm/ContactForm';
+import './Contact.scss';
 function Contact() {
     return (  
-        <h1>Contact</h1>
+        <div className="contact-page">
+            <ContactForm />
+        </div>
     );
 }
 
