@@ -1,0 +1,117 @@
+@import '../../../global.scss';
+
+
+.contact-info {
+    width: 100%;
+
+    .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title1 {
+            width: 102px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            color: #FF64AE;
+
+            @include mobile {
+                font-size: 14px;
+            }
+
+        }
+        .title2 {
+            width: 612px;
+            height: 57px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            text-align: center;
+            color: #091156;
+            margin-top: 12px;
+            @include mobile {
+                width: 350px;
+                height: 40px;
+                font-size: 26px;
+            }
+        }
+
+        .title3 {
+            width: 680px;
+            height: 28px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            margin-top: 12px;
+            @include mobile {
+                font-size: 14px;
+                width: 350px;
+            }
+        }
+    }
+    .cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        @include mobile {
+            flex-direction: column;
+        }
+        .card {
+            width: 300px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 25px 50px 25px #F7F7FF;
+            border-radius: 42px;
+            margin: 0 40px;
+
+            @include tablet {
+                margin: 0 10px;
+            }
+
+            img {
+                width: 65px;
+                height: 65px;
+            }
+
+            .card-title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+                text-align: center;
+                color: #FF64AE;
+                margin-top: 46px;
+
+            }
+
+            .card-content {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 125%;
+                color: #091156;
+                margin-top: 12px;
+            }
+            p {
+                width: 250px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                color: #8B8B8B;
+                margin-top: 12px;
+            }
+        }
+    }
+}
