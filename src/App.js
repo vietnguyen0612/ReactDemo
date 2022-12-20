@@ -9,6 +9,7 @@ import Service from './pages/Service/Service';
 import Gallery from './pages/Gallery/Gallery';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
+import Team from './pages/Team/Team';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/gallery' element={<DefaultLayout><Gallery/></DefaultLayout>}/>
           <Route path='/Blog' element={<DefaultLayout><Blog/></DefaultLayout>}/>
           <Route path='/Contact' element={<DefaultLayout><Contact/></DefaultLayout>}/>
+          <Route path='/team' element={<DefaultLayout><Team /></DefaultLayout>}/>
         </Routes>
       </div>
     </BrowserRouter>

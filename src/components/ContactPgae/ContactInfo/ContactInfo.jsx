@@ -12,19 +12,19 @@ function ContactInfo() {
             </div>
 
             <div className="cards">
-                <div className="card">
+                <div className="card-l-r">
                     <img src={map} alt="" />
                     <div className="card-title">Address</div>
                     <div className="card-content">101 Baker Street, NY</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
                 </div>
-                <div className="card">
+                <div className="card-mid">
                     <img src={phone} alt="" />
                     <div className="card-title">Phone</div>
                     <div className="card-content">+896 120 5889</div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
                 </div>
-                <div className="card">
+                <div className="card-l-r">
                     <img src={mail} alt="" />
                     <div className="card-title">Mail</div>
                     <div className="card-content">mail@company.com</div>

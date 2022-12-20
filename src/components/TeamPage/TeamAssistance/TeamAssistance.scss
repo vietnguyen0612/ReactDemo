@@ -1,0 +1,82 @@
+.team-assistance {
+    width: 100%; 
+
+
+    .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title1 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: #FF64AE;
+
+        }
+
+        .title2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            text-align: center;
+            color: #091156;
+            margin-top: 12px;
+        }
+
+        .title3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            margin-top: 12px;
+        }
+    }
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        padding: 150px 280px 100px 150px ; 
+        
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+
+            .description {
+                .description-title {
+                    display: flex;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 125%;
+                    color: #091156;
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.1em;
+                        font-style: italic;
+                        color: #8B8B8B;
+
+                    }
+                }
+
+                .content {
+                    width: 434px;
+                    height: 77px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                    color: #8B8B8B;
+                }
+            }
+        }
+    }
+}

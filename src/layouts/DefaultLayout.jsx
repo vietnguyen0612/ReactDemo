@@ -8,13 +8,12 @@ function DefaultLayout({children}) {
     const [menuOpen, setMenuOpen] = useState(false)
     const [active, setAtive]  = useState(true)
     
-    
     return (  
         <div className="wrap">
             <Header active={active} setAtive={setAtive} menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <Menu active={active} setAtive={setAtive} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div className="container">{children}</div>
-            <Footer />
+            <Footer active={active} setAtive={setAtive}/>
         </div>
     );
 }

@@ -59,6 +59,13 @@
     }
 }
 
+a {
+    text-decoration: none;
+    &:hover {
+        color: #FF64AE;
+    }
+}
+
 .footer-container {
     width: 100%;
     display: flex;
@@ -185,6 +192,9 @@
     letter-spacing: 0.1em;
     color: #D7DBFF;
     margin-left: 12px;
+    &:hover {
+        color: #FF64AE;
+    }
 }
 
 .footer-sidebar2 .item::before {
@@ -234,6 +244,10 @@
     letter-spacing: 0.1em;
     color: #D7DBFF;
     margin-left: 12px;
+
+    &:hover {
+        color: #FF64AE;
+    }
 }
 
 .footer-sidebar3 .item::before {

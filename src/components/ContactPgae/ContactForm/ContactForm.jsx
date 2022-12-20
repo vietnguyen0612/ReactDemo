@@ -28,8 +28,8 @@ function ContactForm() {
                         </div>
                         <input className='address' type="text" placeholder='Email address'/>
                         <input className='message' type="text" placeholder='Subject message'/>
-                        <textarea class="inquiry" type="text" placeholder="Your inquiry here"></textarea>
-                        <button class="confirm">Send Message</button>
+                        <textarea className="inquiry" type="text" placeholder="Your inquiry here"></textarea>
+                        <button className="confirm">Send Message</button>
                         
                     </div>
                 </div>

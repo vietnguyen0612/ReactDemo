@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.scss';
 import Logo from '../logo/Logo';
 
@@ -10,11 +11,12 @@ import linkedin from "../../img/linkedin-in.svg"
 import instagram from "../../img/instagram.svg"
 import youtube from "../../img/youtube.svg"
 
-function Footer() {
+function Footer({setAtive}) {
 
     const handleScrollTop = () => {
         window.scrollTo(0,0);
     }
+
 
     return (  
         <div className="footer">
@@ -32,18 +34,18 @@ function Footer() {
                 </div>
                 <div className="footer-sidebar2">
                     <div className="pages">Pages</div>
-                    <div className="item home"> Home</div>
-                    <div className="item About"> About</div>
-                    <div className="item Service"> Service</div>
-                    <div className="item gallery"> Gallery</div>
-                    <div className="item team"> Team</div>
+                    <Link className="item home" to='/' onClick={() => {setAtive(true); handleScrollTop();}}> Home</Link>
+                    <Link className="item About" to='/about' onClick={() => {setAtive(false); handleScrollTop();}}> About</Link>
+                    <Link className="item Service"  to='/service' onClick={() => {setAtive(false); handleScrollTop();}}> Service</Link>
+                    <Link className="item gallery" to='/gallery' onClick={() => {setAtive(false); handleScrollTop();}}> Gallery</Link>
+                    <Link className="item team" to='/team' onClick={() => {setAtive(false); handleScrollTop();}}> Team</Link>
                 </div>
                 <div className="footer-sidebar3">
                     <div className="informations">Informations</div>
                     <div className="item home">Terms & conditions</div>
                     <div className="item About">Privacy policy</div>
-                    <div className="item Service">Blog</div>
-                    <div className="item gallery">Contact</div>
+                    <Link className="item Service" to='/blog' onClick={() => {setAtive(false); handleScrollTop();}}>Blog</Link>
+                    <Link className="item gallery" to='/contact' onClick={() => {setAtive(false); handleScrollTop();}}>Contact</Link>
                 </div>
             </div>
             <img 
