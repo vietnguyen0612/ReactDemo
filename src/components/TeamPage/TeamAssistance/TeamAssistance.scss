@@ -1,6 +1,6 @@
 .team-assistance {
     width: 100%; 
-
+    position: relative;
 
     .title {
         width: 100%;
@@ -78,5 +78,18 @@
                 }
             }
         }
+    }
+
+    .bg1 {
+        position: absolute;
+        right: 0;
+        bottom: 810px;
+        z-index: -2;
+    }
+    .bg2 {
+        position: absolute;
+        right: 0;
+        bottom: 700px;
+        z-index: -1;
     }
 }

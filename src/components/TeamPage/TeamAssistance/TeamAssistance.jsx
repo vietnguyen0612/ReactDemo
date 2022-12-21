@@ -2,6 +2,9 @@ import './TeamAssistance.scss';
 import img1 from '../../../img/TeamAssistance1.png';
 import img2 from '../../../img/TeamAssistance2.png';
 import img3 from '../../../img/TeamAssistance3.png';
+import bg1 from '../../../img/teamAssistantbg1.png';
+import bg2 from '../../../img/teamAssistantbg2.png';
+
 function TeamAssistance() {
     return (  
         <div className="team-assistance">
@@ -40,6 +43,9 @@ function TeamAssistance() {
                     </div>
                 </div>
             </div>
+
+            <img className='bg1' src={bg1} alt="" />
+            <img className='bg2' src={bg2} alt="" />
         </div>
     );
 }

@@ -1,0 +1,138 @@
+.team-testimonials {
+    position: relative;
+    padding-top: 100px;
+    margin-bottom: 70px;
+    .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title1 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: #FF64AE;
+        }
+
+        .title2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            text-align: center;
+            color: #091156;
+            margin-top: 12px;
+        }
+
+        .title3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            margin-top: 15px;
+        }
+    }
+    
+
+
+    .content {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 300px;
+        .slider {
+            position: absolute;
+            height: 350px;
+            left: 0;
+            transition: all 1s ease;
+            display: flex;
+            .container {
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;    
+
+                .avatar {
+                    width: 75px;
+                    height: 75px;
+                    margin-bottom: 35px;
+                }
+        
+                .body {
+        
+                    display: flex;
+                    p {
+                        
+                        width: 544px;
+                        height: 106px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+                        color: #8B8B8B;
+        
+                    }
+        
+                    
+        
+        
+                    
+                }
+                .stars {
+                    margin-top: 30px;
+        
+                    .star {
+                        width: 25px;
+                        height: 25px;
+                        margin: 0 8px;
+                    }
+                }
+            }
+            
+        }
+        .right {
+            position: absolute;
+            top: 120px;
+            right: 370px;
+            cursor: pointer;
+            .icon-right {
+                font-size: 25px;
+                margin-top: 20px;
+                margin-left: 60px;
+                color: #091156;
+            }
+
+        }
+        
+        .left {
+            position: absolute;
+            top: 120px;
+            left: 370px;
+            cursor: pointer;
+            .icon-left {
+                
+                font-size: 25px;
+                margin-top: 20px;
+                margin-right: 60px;
+                color: #091156;
+            }
+        }
+    }
+
+    .back-ground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 750px;
+        z-index: -1;
+    }
+}
