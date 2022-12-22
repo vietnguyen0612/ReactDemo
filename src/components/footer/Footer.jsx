@@ -34,7 +34,7 @@ function Footer({setAtive}) {
                 </div>
                 <div className="footer-sidebar2">
                     <div className="pages">Pages</div>
-                    <Link className="item home" to='/' onClick={() => {setAtive(true); handleScrollTop();}}> Home</Link>
+                    <Link className="item home" to='/home2' onClick={() => {setAtive(true); handleScrollTop();}}> Home</Link>
                     <Link className="item About" to='/about' onClick={() => {setAtive(false); handleScrollTop();}}> About</Link>
                     <Link className="item Service"  to='/service' onClick={() => {setAtive(false); handleScrollTop();}}> Service</Link>
                     <Link className="item gallery" to='/gallery' onClick={() => {setAtive(false); handleScrollTop();}}> Gallery</Link>

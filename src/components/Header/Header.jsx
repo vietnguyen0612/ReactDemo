@@ -11,7 +11,7 @@ function Header({active, setAtive, menuOpen, setMenuOpen}) {
             
             <Logo active={active}/>
             <div className="nav">
-                <Link className="home" to='/' onClick={() => setAtive(true)}>Home +</Link>
+                <Link className="home" to='/home2' onClick={() => setAtive(true)}>Home +</Link>
                 <Link className="about" to='/about' onClick={() => setAtive(false)}>About</Link>
                 <Link className="service" to='/service' onClick={() => setAtive(false)}>Service</Link>
                 <Link className="gallery" to='/gallery' onClick={() => setAtive(false)}>Gallery</Link>

@@ -1,0 +1,97 @@
+.home1-slider {
+    display: flex;
+    padding: 200px 150px 150px 180px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .content {
+        h1 {
+            width: 430px;
+            height: 128px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 125%;
+            color: #091156;
+        }
+
+        p {
+            width: 474px;
+            height: 54px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #091156;
+
+        }
+
+        button {
+            width: 200px;
+            height: 58.36px;
+            background-color: #FF64AE;
+            color: white;
+            box-shadow: 0px 17px 22px #FFEDF6;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            border: none;      
+            margin-top: 25px;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+    }
+    .image {
+        width: 601.5px;
+        height: 397.5px;
+    }
+    .bg1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .bg2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 25.31px;
+        height: 8.15px;
+        background-color: #414880;
+        border-radius: 50px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 14.82px;
+            height: 3.09px;
+            left: -25px;
+            bottom: 5px;
+            background-color: #EEEEEE;
+            border-radius: 50px;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 14.82px;
+            height: 3.09px;
+            right: -25px;
+            bottom: 5px;
+            background-color: #EEEEEE;
+            border-radius: 50px;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+    }
+}

@@ -6,7 +6,7 @@ import Menu from "../components/Menu/Menu";
 import './DefaultLayout.scss';
 function DefaultLayout({children}) {
     const [menuOpen, setMenuOpen] = useState(false)
-    const [active, setAtive]  = useState(true)
+    const [active, setAtive]  = useState(false)
     
     return (  
         <div className="wrap">
