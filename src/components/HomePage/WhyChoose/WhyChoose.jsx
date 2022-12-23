@@ -23,28 +23,28 @@ function WhyChoose() {
                         <img src={img2} alt="" />
                         <div className="par">
                             <div className="par1">100%</div>
-                            <div className="par2">trusted clinic</div>
+                            <div className="par2" style={{color: '#FF64AE'}}>Crusted clinic</div>
                         </div>
                     </div>
                     <div className='parameter'>
                         <img src={img3} alt="" />
                         <div className="par">
                             <div className="par1">99%</div>
-                            <div className="par2">customer love</div>
+                            <div className="par2">Customer love</div>
                         </div>
                     </div>
                     <div className='parameter'>
                         <img src={img4} alt="" />
                         <div className="par">
                             <div className="par1">75+</div>
-                            <div className="par2">asian branch</div>
+                            <div className="par2">Asian branch</div>
                         </div>
                     </div>
                     <div className='parameter'>
                         <img src={img5} alt="" />
                         <div className="par">
                             <div className="par1">1.200+</div>
-                            <div className="par2">licensed worker</div>
+                            <div className="par2">Licensed worker</div>
                         </div>
                     </div>
                 </div>
