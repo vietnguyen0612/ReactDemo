@@ -1,0 +1,142 @@
+@import '../../../global.scss';
+
+.home1-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+
+    .section-team-text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            width: 160px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            color: #FF64AE;
+
+        }
+
+        .text-content {
+            width: 732px;
+            height: 53px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            text-align: center;
+            color: #091156;
+            margin-top: 12px;
+            @include mobile {
+                width: 400px;
+                font-size: 26px;
+            }
+        }
+
+        .content {
+            width: 848px;
+            height: 51px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            @include mobile {
+                width: 400px;
+                font-size: 14px;
+            }
+
+        }
+    }
+
+    .section-team-content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 170px;
+        @include tablet {
+            flex-direction: column;
+
+        }
+
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 96px 0;
+
+            .work {
+                width:140px;
+                height: 20px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+                text-align: center;
+                color: #FF64AE;
+            }
+
+            .name {
+                width: 263px;
+                height: 37px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 125%;
+                text-align: center;
+                color: #091156;
+            }
+
+            .person-content {
+                width: 270px;
+                height: 63px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                color: #8B8B8B;
+            }
+
+            img {
+                
+            }
+
+            &.person-mid {
+                width: 450px;
+                height: 650px;
+                background-color: #FFFFFF;
+                box-shadow: 0px 25px 50px 25px #F7F7FF;
+                border-radius: 42px;
+                padding: 96px 70px;
+                @include mobile {
+                    background-color: unset;
+                }
+            }
+
+            &.person-left-right {
+                width: 420px;
+                height: 650px;
+                border-radius: 42px;
+                padding: 96px 60px;
+            }
+
+
+        }
+    }
+    .background1 {
+        position: absolute;
+        bottom: 125px;
+        right: 0;
+        z-index: -2;
+    }
+    .background2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}

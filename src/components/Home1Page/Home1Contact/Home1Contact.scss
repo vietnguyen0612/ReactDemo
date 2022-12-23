@@ -1,0 +1,175 @@
+@import '../../../global.scss';
+
+.home1-contact {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+    @include mobile {
+        padding-top: 150px;
+    }
+    .container {
+        padding: 0 190px 0 150px;
+
+        @include tablet {
+            padding: 0 20px 0 100px;
+        }
+
+        @include mobile {
+            padding: 0 20px 0 20px;
+        }
+
+        .contact-text-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 70px;
+            flex-direction: column;
+            align-items: flex-end;
+
+            @include tablet {
+                flex-direction: column;
+            }
+            .title {
+                margin-right: 115px;
+            }
+            .title1 {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+                color: #FF64AE;
+
+                @include mobile {
+                    font-size: 14pxq;
+                }
+            }
+            .title2 {
+                width: 404px;
+                height: 97px;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 125%;
+                color: #091156;
+
+                @include mobile {
+                    width: 350px;
+                    font-size: 26px;
+                }
+            }
+            .content {
+                width: 450px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1em;
+                color: #8B8B8B;
+                margin-right: 68px;
+                @include mobile {
+                    font-size: 14px;
+                    width: 350px;
+                }
+            }
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            @include tablet {
+                flex-direction: column;
+            }
+            img {
+                width: 545px;
+                height: 480.52px;
+                @include mobile {
+                    width: 350px;
+                    height: 320px;
+                }
+            }
+
+            .form {
+                width: 520px;
+                display: flex;
+                flex-direction: column;
+                @include mobile {
+                    width: 350px;
+                }
+
+                .name {
+                    display: flex;
+                    justify-content: space-between;
+                    @include mobile {
+                        flex-direction: column;
+                    }
+
+                    input {
+                        width: 245px;
+                        @include mobile {
+                            width: 100%;
+                        }
+                    }
+                }
+                input {
+                    height: 60px;
+                    border: 1px solid #D9DDFE;
+                    border-radius: 15px;
+                    padding-left: 24px;
+                    outline: none;
+                    font-size: 16px;
+                    margin-bottom: 40px;
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.1em;
+                        color: #C5C5C5;
+
+                    }
+                }
+
+                .inquiry {
+                    height: 240px;
+                    padding: 24px;
+                    border: 1px solid #D9DDFE;
+                    outline: none;
+                    margin-bottom: 70px;
+                    font-size: 16px;
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.1em;
+                        color: #C5C5C5;
+
+                    }
+                }
+
+                .confirm {
+                    width: 248px;
+                    height: 58px;
+                    background-color: #FF64AE;
+                    box-shadow: 0px 17px 22px #FFEDF6;
+                    border-radius: 50px;
+                    border: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 16px;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .bg1 {
+        position: absolute;
+        top: -222px;
+        left: 0;
+        z-index: -1;
+    }
+    .bg2 {
+        position: absolute;
+        top: -250px;
+        left: 0;
+        z-index: -2;
+    }
+}

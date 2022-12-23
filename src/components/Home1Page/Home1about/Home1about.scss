@@ -1,0 +1,111 @@
+.home1-about {
+    display:  flex;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    margin-top: 200px;
+    position: relative;
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        .title {
+            width: 73px;
+            height: 20px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            color: #FF64AE;
+        }
+
+        .content1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 125%;
+            color: #091156;
+            margin-top: 12px;
+        }
+        .content2 {
+            width: 483px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            margin-top: 18px;
+
+        }
+        .content3 {
+            width: 483px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: #8B8B8B;
+            margin-top: 18px;
+        }
+
+    }
+
+    .image {
+        width: 625px;
+        height: 500px;
+    }
+
+
+
+    .buttons {
+        position: absolute;
+        bottom: 60px;
+        left: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .learn-more {
+            width: 200px;
+            height: 58.36px;
+            background-color: #FF64AE;
+            box-shadow: 0px 17px 22px #FFEDF6;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            border: none;
+            margin-right: 45px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.8;
+            }
+        }
+
+        .watch {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1em;
+                color: #8B8B8B;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    .bg1 {
+        position: absolute;
+        bottom: -60px;
+        right: 0;
+        z-index: -1;
+    }
+    .bg2 {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        z-index: -2;
+    }
+}
